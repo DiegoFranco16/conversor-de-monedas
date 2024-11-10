@@ -8,7 +8,8 @@ import java.net.http.HttpResponse;
 public class ConsultaMoneda {
     //Método para devolver la moneda luego de consultar la API
     public ConversionMoneda buscaConversion(String moneda1, String moneda2, double cantidad){
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/2a93fab3b8385295cb927991/pair/COP/USD/2000000");
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/2a93fab3b8385295cb927991/pair/" +
+                moneda1 + "/" + moneda2 + "/" + cantidad);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
@@ -19,7 +20,7 @@ public class ConsultaMoneda {
                     .send(request, HttpResponse.BodyHandlers.ofString());
             return new Gson().fromJson(response.body(), ConversionMoneda.class);
         } catch (Exception e) {
-            throw new RuntimeException("No encontré esas monedas para la conversión");
+            throw new RuntimeException("Las monedas ingresadas no existen, verifique por favor");
         }
     }
 }
