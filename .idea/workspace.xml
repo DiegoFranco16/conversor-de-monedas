@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Consulta API exitosa">
+    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Consulta API pasando parámetros">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConsultaMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsultaMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1731262830112</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Consulta API pasando parámetros">
+      <option name="closed" value="true" />
+      <created>1731277070342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731277070343</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial" />
     <MESSAGE value="Consulta API exitosa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Consulta API exitosa" />
+    <MESSAGE value="Consulta API pasando parámetros" />
+    <option name="LAST_COMMIT_MESSAGE" value="Consulta API pasando parámetros" />
   </component>
 </project>

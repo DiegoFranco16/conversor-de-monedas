@@ -20,7 +20,7 @@ public class ConsultaMoneda {
                     .send(request, HttpResponse.BodyHandlers.ofString());
             return new Gson().fromJson(response.body(), ConversionMoneda.class);
         } catch (Exception e) {
-            throw new RuntimeException("Las monedas ingresadas no existen, verifique por favor");
+            throw new RuntimeException("No es posible realizar la conversión de monedas");
         }
     }
 }
