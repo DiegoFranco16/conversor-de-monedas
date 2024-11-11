@@ -18,12 +18,12 @@ public class Principal {
                     6) Peso colombiano =>> Dólar
                     7) Dólar =>> Renminbi chino
                     8) Renminbi chino =>> Dólar
-                    9) Salir
-                    
-                    Elija una opción válida
+                    9) Salir                    
+                 
                     ************************************************
+                    Elija una opción válida: 
                     """;
-            System.out.println(menuInicial);
+            System.out.print(menuInicial);
             int opcion = lectura.nextInt();
             String moneda1 = "";
             String moneda2 = "";
@@ -66,6 +66,7 @@ public class Principal {
                     break;
                 default:
                     System.out.println("La opción seleccionada no es válida, inténtelo de nuevo");
+                    esperarEnter();
                     continue;
             }
             if (salir == 9) return;
@@ -78,14 +79,19 @@ public class Principal {
                 "=>>> " + conversionMoneda.conversion_result() + " [" + moneda2 + "]");
             } catch (RuntimeException e) {
                 System.out.println("La cantidad ingresada presenta errores: " + e.getMessage());
+            } finally {
+                esperarEnter();
             }
-            //System.out.println("Presione ENTER para continuar");
-            //var enter = lectura.nextLine();
+
 
 
         }
+    }
 
-
-
+    public static void esperarEnter(){
+        Scanner lectura = new Scanner(System.in);
+        //lectura.nextLine(); //Limpiamos buffer del System.in
+        System.out.println("\n\t\tPRESIONE ENTER PARA CONTINUAR..."); //Mensaje en pantalla
+        lectura.nextLine(); //Ahora el programa se detiene hasta que se pulse ENTER
     }
 }
