@@ -5,11 +5,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class GeneradorDeArchivo {
-    /*
-}
-    public void guardarJson(Pelicula pelicula) throws IOException {
+
+    public void guardarJson(ConversionMoneda conversionMoneda) throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        FileWriter escritura = new FileWriter(pelicula.title() + ".json");
-        escritura.write(gson.toJson(pelicula));
-        escritura.close();*/
+        FileWriter escritura = new FileWriter("ConversionDeMonedas" + ".json");
+        //FileWriter escritura = new FileWriter(pelicula.title() + ".json");
+        escritura.write(gson.toJson(conversionMoneda));
+        escritura.close();
+    }
 }

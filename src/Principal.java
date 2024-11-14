@@ -90,13 +90,10 @@ public class Principal {
                 }
                 System.out.println("El valor " + cantidad + " [" + moneda1 + "] " + "corresponde al valor final de " +
                             "=>>> " + conversionMoneda.conversion_result() + " [" + moneda2 + "]");
+                GeneradorDeArchivo generador = new GeneradorDeArchivo();
+                generador.guardarJson(conversionMoneda);
 
-
-
-
-
-
-            } catch (RuntimeException e) {
+            } catch (RuntimeException | IOException e) {
                 System.out.println("La cantidad ingresada presenta errores: " + e.getMessage());
             } finally {
                 esperarEnter();
