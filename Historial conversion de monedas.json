@@ -1,0 +1,28 @@
+{
+  "base_code": "USD",
+  "target_code": "ARS",
+  "amount": 200.0,
+  "conversion_result": 199850.0,
+  "timestamp": "2024-11-14T14:43:28.6353622"
+},
+{
+  "base_code": "USD",
+  "target_code": "BTC",
+  "amount": 9874.0,
+  "conversion_result": 0.11073695937,
+  "timestamp": "2024-11-14T14:43:35.0175564"
+},
+{
+  "base_code": "COP",
+  "target_code": "USD",
+  "amount": 789.0,
+  "conversion_result": 0.1772883,
+  "timestamp": "2024-11-14T14:44:02.4878969"
+},
+{
+  "base_code": "USD",
+  "target_code": "GBP",
+  "amount": 365.0,
+  "conversion_result": 287.706505,
+  "timestamp": "2024-11-14T14:44:12.4311907"
+},

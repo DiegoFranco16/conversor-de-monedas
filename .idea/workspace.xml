@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Primera versión de la generación del archivo JSON con la info de la conversión">
+    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Se guardan todas las transacciones realizadas en un archivo .json existente. Si no existe, lo crea">
+      <change afterPath="$PROJECT_DIR$/src/LocalDateTimeAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Historial_conversion_de_monedas.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsultaMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsultaMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConversionMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConversionMoneda.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GeneradorDeArchivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GeneradorDeArchivo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731605275411</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Se guardan todas las transacciones realizadas en un archivo .json existente. Si no existe, lo crea">
+      <option name="closed" value="true" />
+      <created>1731610541856</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731610541856</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +175,7 @@
     <MESSAGE value="Se implementa la función Dólar =&gt;&gt; Cualquier moneda, se parametriza el valor de salida y se corrigen pequeños errores" />
     <MESSAGE value="Unificación de respuesta de las 2 APIs en el mismo Record, unificando estructura para pasar a la generacion de archivos" />
     <MESSAGE value="Primera versión de la generación del archivo JSON con la info de la conversión" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primera versión de la generación del archivo JSON con la info de la conversión" />
+    <MESSAGE value="Se guardan todas las transacciones realizadas en un archivo .json existente. Si no existe, lo crea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se guardan todas las transacciones realizadas en un archivo .json existente. Si no existe, lo crea" />
   </component>
 </project>
