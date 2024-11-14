@@ -39,16 +39,21 @@ Para el funcionamiento de la aplicación se siguió el siguiente paso a paso, co
   - Agregar en estructura del proyecto, en el apartado módulos, el .jar de Gson 2.10.1
 - Postman, para validación de respuestas de la API a utilizar
 - ExchangeRate-API, disponible en https://www.exchangerate-api.com/
+- Open exchange rates-API, disponible en https://openexchangerates.org/
 
 ### Obtención de clave API
 Para obtener la clave de acceso, es necesario realizar un registro inicial ingresando un correo electrónico. Después de completar el registro, se enviará la clave al correo electrónico proporcionado, y estará lista para su uso.
 
 ### Comandos principales
-Respecto a la API se consideran los siguientes comandos
+Respecto a la ExchangeRate-API se consideran los siguientes comandos:
 
 `GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP`
 
 `GET https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP/AMOUNT`
+
+Respecto a la Open exchange rates-API se consideran el siguientes comando:
+
+`https://openexchangerates.org/api/latest.json?app_id=d7b6ea597a334d3cb2ccfc1969f8555e&symbols=GBP`
 
 Respecto a las herramientas de conexión de Java, se usaron los siguientes recursos:
 - [Class HttpClient](https://docs.oracle.com/en/java/javase/11/docs/api/java.net.http/java/net/http/HttpClient.html)
@@ -59,7 +64,8 @@ Respecto a las herramientas de conexión de Java, se usaron los siguientes recur
 
 ## Características de la aplicación y demostración
 La aplicación permite seleccionar a través del teclado una opción de un menú inicial, donde se proponen 8 conversiones de divisas y una opción de salida.
-Adicionalmente, se implementó un módulo para seleccionar de forma libre las dos divisas a convertir. Por temas didácticos, este módulo se implementa con otra API diferente.
+Adicionalmente, se implementó un módulo para seleccionar de forma libre las dos divisas a convertir.
+Por temas didácticos, las 8 conversiones predefinidas se implementan con ExchangeRate-API, y la opción de conversión libre se implementa con Open exchange rates-API.
 
 
 ## Conclusión
