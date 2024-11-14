@@ -66,6 +66,7 @@ Respecto a las herramientas de conexión de Java, se usaron los siguientes recur
 La aplicación permite seleccionar a través del teclado una opción de un menú inicial, donde se proponen 8 conversiones de divisas y una opción de salida.
 Adicionalmente, se implementó un módulo para seleccionar de forma libre las dos divisas a convertir.
 Por temas didácticos, las 8 conversiones predefinidas se implementan con ExchangeRate-API, y la opción de conversión libre se implementa con Open exchange rates-API.
+Adicionalmente, el programa genera un archivo JSON donde se guardan todas las conversiones realizadas: moneda base, moneda destino, cantidad, tasa de cambio y resultado de conversión.
 
 
 ## Conclusión
