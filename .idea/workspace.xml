@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Se implementa pausa de programa en cada iteración">
-      <change afterPath="$PROJECT_DIR$/src/ConsultaMonedaIndividual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ConversionMonedaIndividual.java" afterDir="false" />
+    <list default="true" id="9c648f1b-980c-47d8-8883-38a3802faffb" name="Changes" comment="Se implementa la función Dólar =&gt;&gt; Cualquier moneda, se parametriza el valor de salida y se corrigen pequeños errores">
+      <change afterPath="$PROJECT_DIR$/src/GeneradorDeArchivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PlantillaConversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsultaMoneda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsultaMoneda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsultaMonedaIndividual.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731292447410</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Se implementa la función Dólar =&gt;&gt; Cualquier moneda, se parametriza el valor de salida y se corrigen pequeños errores">
+      <option name="closed" value="true" />
+      <created>1731557720005</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731557720005</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +139,7 @@
     <MESSAGE value="Consulta API pasando parámetros" />
     <MESSAGE value="Menú, ingreso info del usuario y conversión exitosa" />
     <MESSAGE value="Se implementa pausa de programa en cada iteración" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementa pausa de programa en cada iteración" />
+    <MESSAGE value="Se implementa la función Dólar =&gt;&gt; Cualquier moneda, se parametriza el valor de salida y se corrigen pequeños errores" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementa la función Dólar =&gt;&gt; Cualquier moneda, se parametriza el valor de salida y se corrigen pequeños errores" />
   </component>
 </project>

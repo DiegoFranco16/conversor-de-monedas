@@ -81,17 +81,20 @@ public class Principal {
             System.out.print("Ingrese la cantidad que desea convertir: ");
             try {
                 cantidad = lectura.nextDouble();
+                ConsultaMoneda consulta = new ConsultaMoneda();
+                ConversionMoneda conversionMoneda;
                 if(opcion ==9){
-                    ConsultaMonedaIndividual consulta = new ConsultaMonedaIndividual();
-                    ConversionMonedaIndividual conversionMoneda = consulta.buscaConversion(moneda2);
-                    System.out.println("El valor " + cantidad + " [" + moneda1 + "] " + "corresponde al valor final de " +
-                            "=>>> " + (cantidad * conversionMoneda.rates().get(moneda2)) + " [" + moneda2 + "]");
+                    conversionMoneda = consulta.buscaConversionIndividual(moneda2, cantidad);
                 } else {
-                    ConsultaMoneda consulta = new ConsultaMoneda();
-                    ConversionMoneda conversionMoneda = consulta.buscaConversion(moneda1, moneda2, cantidad);
-                    System.out.println("El valor " + cantidad + " [" + moneda1 + "] " + "corresponde al valor final de " +
-                            "=>>> " + conversionMoneda.conversion_result() + " [" + moneda2 + "]");
+                    conversionMoneda = consulta.buscaConversion(moneda1, moneda2, cantidad);
                 }
+                System.out.println("El valor " + cantidad + " [" + moneda1 + "] " + "corresponde al valor final de " +
+                            "=>>> " + conversionMoneda.conversion_result() + " [" + moneda2 + "]");
+
+
+
+
+
 
             } catch (RuntimeException e) {
                 System.out.println("La cantidad ingresada presenta errores: " + e.getMessage());
